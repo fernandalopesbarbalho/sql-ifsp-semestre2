@@ -1,0 +1,59 @@
+CREATE DATABASE Ficha;
+USE Ficha;
+
+CREATE TABLE Paciente(
+	NroPaciente VARCHAR(15) NOT NULL PRIMARY KEY,
+	Nome VARCHAR(50) NOT NULL,
+	DataNascimento DATE,
+	Genero VARCHAR(10) NOT NULL,
+	EstadoCivil VARCHAR(10) NOT NULL,
+	Rg VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE EnderecoPaciente(
+	NroPaciente VARCHAR(15) NOT NULL PRIMARY KEY,
+	FOREIGN KEY(NroPaciente) REFERENCES Paciente(NroPaciente),
+	Cep VARCHAR(8) NOT NULL,
+	Logradouro VARCHAR(50) NOT NULL,
+	Numero INT NOT NULL,
+	Bairro VARCHAR(50) NOT NULL,
+	Cidade VARCHAR(50) NOT NULL,
+	Estado VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE TelefonePaciente(
+	NroPaciente VARCHAR(15) NOT NULL PRIMARY KEY,
+	FOREIGN KEY(NroPaciente) REFERENCES Paciente(NroPaciente),
+	Ddi VARCHAR(3) NOT NULL,
+	Ddd VARCHAR(3) NOT NULL,
+	Telefone VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE ConvenioPaciente(
+	NroPaciente VARCHAR(15) NOT NULL PRIMARY KEY,
+	FOREIGN KEY(NroPaciente) REFERENCES Paciente(NroPaciente),
+	Convenio VARCHAR(50) NOT NULL,
+	CodigoConvenio VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Medico(
+	Crm VARCHAR(15) NOT NULL PRIMARY KEY,
+	Nome VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Consulta(
+	NroConsulta VARCHAR(15) NOT NULL PRIMARY KEY,
+	Crm VARCHAR(15) NOT NULL,
+	FOREIGN KEY(Crm) REFERENCES Medico(Crm),
+	NroPaciente VARCHAR(15) NOT NULL,
+	FOREIGN KEY(NroPaciente) REFERENCES Paciente(NroPaciente),
+	Data DATETIME,
+	Diagnostico VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Exames(
+	NroConsulta VARCHAR(15) NOT NULL PRIMARY KEY,
+	FOREIGN KEY(NroConsulta) REFERENCES Consulta(NroConsulta),
+	Exame VARCHAR(200) NOT NULL,
+	Data DATETIME
+);
