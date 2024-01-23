@@ -11,4 +11,4 @@ Comandos em SQL produzidos em aulas, atividades e trabalhos durante o segundo se
 
 ## 5 - Consultório
 
-## 6 - [Projeto Versionary](https://github.com/valencprado/ifsp-sql-versionary)
+## 6 - [Projeto Versionary](https://github.com/fernandalopesbarbalho/ifsp-sql-versionary)
