@@ -1,7 +1,7 @@
 # Comandos SQL
 Comandos em SQL produzidos em aulas, atividades e trabalhos durante o segundo semestre de Análise e Desenvolvimento de Sistemas (IFSP), referente à matéria de Introdução à Banco de Dados.
 
-## 1 - Comandos Básicos
+## 1 - Comandos Iniciais
 
 ## 2 - Ficha de Consulta
 
