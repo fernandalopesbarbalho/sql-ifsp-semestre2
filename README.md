@@ -10,5 +10,6 @@ Comandos em SQL produzidos em aulas, atividades e trabalhos durante o segundo se
 ## 4 - Nota Fiscal
 
 ## 5 - Consultório
+Código corrigido pelo professor.
 
 ## 6 - [Projeto Versionary](https://github.com/fernandalopesbarbalho/ifsp-sql-versionary)
