@@ -12,3 +12,7 @@ Comandos em SQL produzidos em aulas, atividades e trabalhos durante o segundo se
 ## 5 - [Consultório](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre2/blob/main/consultorio.sql)
 
 ## 6 - [Projeto Versionary](https://github.com/fernandalopesbarbalho/ifsp-sql-versionary)
+
+![sql](https://github.com/user-attachments/assets/90f843d1-0d21-4a74-8497-580293e07c7f)
+
+[Crédito de imagem.](https://x.com/ianevictxria/status/1825545528274465272)
