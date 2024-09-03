@@ -1,6 +1,8 @@
 # Comandos SQL
 Comandos em SQL produzidos em aulas, atividades e trabalhos durante o segundo semestre de Análise e Desenvolvimento de Sistemas (IFSP), referente à matéria de Introdução à Banco de Dados.
 
+Nota final: 8,0.
+
 ## 1 - [Comandos Iniciais](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre2/blob/main/comandos_iniciais.sql)
 
 ## 2 - [Ficha de Consulta](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre2/blob/main/ficha_consulta.sql)
